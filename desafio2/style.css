@@ -1,0 +1,76 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+    /* --body-bg-color: #FAF7FD; */
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-bg-color);
+    color: var(--purple);
+    gap: 1rem;
+}
+body div{
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+body div a{
+    color: var(--purple);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+body aside{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+body aside img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--purple);
+}
+body aside p{
+    margin: 0;
+}
+
+body nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.8rem;
+}
+body nav ul li{
+    border: 1px solid var(--purple);
+    padding: 0.4rem 6rem;
+}
+
+body nav ul li a{
+    color: var(--purple);
+    text-decoration: none;
+}
+
+body section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
