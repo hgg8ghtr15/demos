@@ -5,31 +5,60 @@
     --bg-techs: #CB92B1; 
 }
 
-body{
-    background-color: var(--body-bg-color);
+body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 0;
     flex-wrap: wrap;
-    height: 100vh;
-    gap: 2rem;
-    padding: 1rem;
+    background-color: var(--body-bg-color);
     color: var(--text-color);
 }
+
+body nav{
+    background-color:var(--bg-techs);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+body nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.8rem;
+  }
+body nav a:hover{
+    background-color:var(--text-color);
+    color: var(--bg-techs);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+.container{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
 a{
     color: var(--text-color);
     text-decoration: none;
 }
 
 /*  asside */
-.aside{
-    width: 15vw;
+.container .aside{
+    width: 25vh;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 1;
+    flex-direction: column;
+    flex-grow:1 ;
     gap: 2rem;
 }
-.aside div{
+.aside .perfil{
     padding: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -38,13 +67,13 @@ a{
     background-color: var(--bg-cards);
     gap: 0.1rem;
 }
-.aside div img{
+.aside .perfil img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 10px 0px
 }
-.aside div p{
+.aside .perfil p{
     margin: 0;
 }
 
@@ -74,25 +103,34 @@ a{
     color: var(--text-color);
 }
 
-.aside .cards {
-    flex-wrap: wrap;
-    padding: 0.8rem;
+.aside .stake{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.4rem;
+    border-radius: 20px;
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+}
+.aside .stake p{
+    margin: 16px;
 }
 
-.aside .cards .card{
-    flex-wrap: wrap;
+.aside .stake ul{
+    padding: 0.8rem;
     display: flex;
+    flex-wrap: wrap;
+    /* width: 50%; */
     align-items: center;
-    justify-items: auto;
+    justify-content: left;
     flex-direction: row;
+    gap: 0.8rem;
     list-style: none;
-    gap: 0.4rem;
 }
-.aside .cards .card a{
+.aside .stake ul li{
+    margin: 0.2rem;
+    gap: 0.8rem;
+}
+.aside .stake ul li a{
     padding: 0.4rem;
     color: var(--text-color);
     background-color: var(--bg-techs);
@@ -102,9 +140,12 @@ a{
 
 /*  main */
 .main{
+    flex-wrap: wrap;
+    /* width: 80vw; */
     display: flex;
     flex-direction: column;
-    flex-grow: 10;
+    flex-grow: 3;
+    flex-shrink:0;
     gap: 0.8rem;
 }
 
