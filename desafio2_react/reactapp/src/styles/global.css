@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+  /* Color Theme Swatches in RGBA */
+  --body: rgba(107, 125, 140, 1);
+  --card: rgba(132, 153, 165, 1);
+  --borda: rgba(197, 214, 216, 1);
+  --texto: rgba(2, 38, 0, 1);
+  --cor5: rgba(71, 89, 54, 1);
+
+}
+
+body {
+  background-color: var(--body);
+  color: var(--texto);
+}
+

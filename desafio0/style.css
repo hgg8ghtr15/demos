@@ -6,6 +6,11 @@
     --car2: #184969;
     --car3: #103851;
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;  
+}
 body{
     display: flex;
     flex-direction: column;
@@ -23,7 +28,7 @@ body{
     /* justify-content: center; */
     justify-content: space-evenly;
     /* height: 100px; */
-    padding: 1rem;
+    padding: 2vh;
     /* border: 1px solid #184969; */
 }
 .nav img{  
@@ -44,10 +49,12 @@ body{
     display: flex;
 }
 .nav ul li a {
+    font-size: large;
     padding: 1rem;
     text-decoration: none;
 }
 .nav ul li a:hover {
+    border-radius: 5px;
     background-color: var(--car3);
     color: var(--body);
     text-decoration: none;
@@ -58,12 +65,40 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: 600px;  
     
-    /* height: 600px;   */
-    /* background-color: var(--car1); */
+    background-color: var(--car1);
+    color: var(--body);
+
 }
 .imagem img{
     width: 100vw;
     /* height: 70vh; */
 }
 
+.imagem form fieldset{
+    font-size: large;
+    border: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+.imagem form fieldset input, select,option , button{
+    padding: 8px;
+}
+.imagem form fieldset select:after{
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+.imagem form fieldset .check{
+    /* border: 0px; */
+    gap: 8px;
+    display: flex;
+}

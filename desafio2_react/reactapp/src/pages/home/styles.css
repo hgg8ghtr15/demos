@@ -1,0 +1,23 @@
+.containner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px;
+  }
+  
+.navebar {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   /* min-width: 270px; */
+   gap: 20px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 5;
+}
