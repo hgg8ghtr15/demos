@@ -21,3 +21,13 @@
     flex-wrap: wrap;
     flex-grow: 5;
 }
+
+.redeSocial{
+  background-color: var(--card);
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding: 10px;
+
+  border-radius: 15px;
+}

@@ -1,0 +1,9 @@
+
+.redeSocial a {
+    padding: 2px;
+    /* border: 2px solid var(--borda); */
+    /* border-radius: 50%; */
+    max-width: 150px;
+    text-decoration: none;
+    color: var(--texto);
+}
