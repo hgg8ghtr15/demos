@@ -1,0 +1,24 @@
+.div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+
+.imagem{
+    width: 800px;
+    /* height: 100px; */
+}
+
+.colorred, a{
+    color:#F00622
+}
+
+hr{
+    border-color: #232339 ;
+    /* border: 2px solid  ; */
+}
+
+
+
